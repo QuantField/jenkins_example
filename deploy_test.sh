@@ -13,9 +13,9 @@ echo '==== Installing required packages ===='
 $ENV_NAME/bin/pip install -r ./requirements.txt 
 
 
-## using jenkins path variable JOBNAME and location, cd to location
+## using jenkins path variable JOB_NAME and location, cd to location
 
-cd /var/lib/jenkins/workspace/$JOBNAME/
+cd /var/lib/jenkins/workspace/$JOB_NAME/
 
 echo '==== Runing tests ===='
 python -m pytest tests/  --junitxml=./xmlReport/output.html
